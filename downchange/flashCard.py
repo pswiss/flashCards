@@ -1,20 +1,10 @@
 # Author: Petras Swissler
 # 2018-10-01
 ############################################
-# Flash Card Asker
+# Flash Card Giver
 ############################################
 # Import Libraries
-from random import*
-
-#Helper Functions
-#https://eli.thegreenplace.net/2010/01/22/weighted-random-generation-in-python/
-def weighted_choice_sub(weights):
-    rnd = random() * sum(weights)
-    for i, w in enumerate(weights):
-        rnd -= w
-        if rnd < 0:
-            return i
-            
+from random import randint
 # Define global variables
 flashFile = "termsAndDefinitions.txt"
 
@@ -41,30 +31,29 @@ with open(flashFile,'r') as fin:
 numRemainAsk = sum(scores);
 
 while (numRemainAsk > 0):
-    print("----------------------------------------")
     
     sumScores = 0;
 
     #determine which definition to ask
-    #defAsk = randint(0,len(scores)-1)
-    defAsk = weighted_choice_sub(scores)
+    defAsk = randint(0,len(scores)-1)
 
     
     # Ask the definition
     print(definitions[defAsk])
-   
-    if(input("Input term: ")== terms[defAsk]):
+    input("press any key to see answer")
+    print(terms[defAsk])
+    
+    
+    if (input("Did you answer Correctly? (y = yes):")=='y'):
         scores[defAsk] = scores[defAsk] - 1
-        print("Correct! ",terms[defAsk])
     else:
         scores[defAsk] = scores[defAsk] + 1
-        print("Incorrect! ",terms[defAsk])
 
-    # Remove if never need to ask again
-    if (scores[defAsk] <= 0):
-        scores.remove(defAsk)
-        terms.remove(defAsk)
-        definitions.remove(defAsk)
+        # Remove if never need to ask again
+        if (scores[defAsk] <= 0):
+            scores.remove(defAsk)
+            terms.remove(defAsk)
+            definitions.remove(defAsk)
     
     numRemainAsk = sum(scores);
     print("Num Remaining: ",numRemainAsk)

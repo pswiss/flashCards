@@ -55,11 +55,11 @@ while (numRemainAsk > 0):
    
     if(input("Input term: ")== terms[defAsk]):
         scores[defAsk] = scores[defAsk] - 1
-        print("Correct! ",terms[defAsk])
+        print("Correct!      ",terms[defAsk])
     else:
         scores[defAsk] = scores[defAsk] + 1
         print("Incorrect! ",terms[defAsk])
     
     numRemainAsk = sum(scores);
-    print("Num Remaining: ",numRemainAsk,"\r\n")
+    print("Total Num Remaining: ",numRemainAsk,"   Remaining for this definition: ", scores[defAsk],"\r\n")
 print("All Done")

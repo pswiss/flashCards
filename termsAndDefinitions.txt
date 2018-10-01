@@ -1,5 +1,5 @@
 actions|Preemptable (interruptable) services. If you have a service that takes a long time (moving a robot arm), you can use ____ to make them interruptable.
-bags|A ____ is a file that contains recorded topic data. The associated package that defines command line tools and APIs for interacting with ____.
+bag|A ____ is a file that contains recorded topic data. The associated package that defines command line tools and APIs for interacting with ____.
 callback|A ____ is a function that gets "connected" to a particular event. The most common usage would be a function inside of a node that gets called every time a message gets published on a particular topic.
 catkin|This is the primary build system of ROS. ____ is used to convert message definitions into useful code, C++ code into executables, define installation instructions for packages, and other things. More about these ideas can be read on the ____ conceptual overview page.
 catkin_create_pkg|Automatically create a new directory with a template CMakeLists.txt and package.xml – the two files required by all ROS packages. Allows you to list dependencies and have them automatically be filled out in the package.xml.
@@ -23,7 +23,7 @@ node|A ____ is simply a process that, when run, performs some sort of computatio
 package|ROS software is organized into ____. A ____ may include nodes, configuration files, non-ROS libraries, launch files, and more. All ____ must have a ____.xml file defining its manifest.
 parameters|Parameters are globally accessible variables (all nodes can see them). Typically these contain things like configuration or calibration data. They are set and retrieved via the parameter server run by the master.
 publisher|Nodes use ____ to send data, or "____" data, on a particular topic.
-remapping|Many ROS names such as topics, services, and parameters can be "remapped" at the command line. This allows multiple nodes of the same type to be started with different configurations. It also facilitates re-use of general nodes in specific cases.
+remapped|Many ROS names such as topics, services, and parameters can be ______ at the command line. This allows multiple nodes of the same type to be started with different configurations. It also facilitates re-use of general nodes in specific cases.
 rosbag|This is a command line tool for creating, analyzing, playing, etc., bag files
 rosbuild|Up until the Fuerte version of ROS this package provided a set of CMake macros for compiling ROS packages. This has largely been replaced by catkin.
 roscd|Change directory to the location of a package/metapackage using just the package name.

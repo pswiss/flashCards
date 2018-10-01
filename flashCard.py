@@ -59,13 +59,7 @@ while (numRemainAsk > 0):
     else:
         scores[defAsk] = scores[defAsk] + 1
         print("Incorrect! ",terms[defAsk])
-
-    # Remove if never need to ask again
-    if (scores[defAsk] <= 0):
-        scores.remove(defAsk)
-        terms.remove(defAsk)
-        definitions.remove(defAsk)
     
     numRemainAsk = sum(scores);
-    print("Num Remaining: ",numRemainAsk)
+    print("Num Remaining: ",numRemainAsk,"\r\n")
 print("All Done")

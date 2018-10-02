@@ -46,7 +46,7 @@ rosservice|[command] This can be used for listing and calling services
 rossrv|[command] This is basically the same as rosmsg, but for services
 rostopic|[command] Display debug information about ROS topics including publishers, subscribers, frequency, raw values, etc.
 roswtf|[command] A tool for diagnosing common issues with a ROS system.
-rqt|____ is a Qt-based framework for GUI development in ROS. The _____common_plugins metapackage provides many pre-made ROS GUIs that are great for working with ROS. Built in tools include bagfile plotting, playing, and recording, visualization of the /tf tree, image stream viewers, and more.
+rqt|____ is a framework for GUI development in ROS. The _____common_plugins metapackage provides many pre-made ROS GUIs that are great for working with ROS. Built in tools include bagfile plotting, playing, and recording, visualization of the /tf tree, image stream viewers, and more.
 rviz|____ is the primary 3D visualization tool used in ROS.
 service|A ____ defines a request-reply communication paradigm between nodes. There are special .[omitted] ____ definition files which are essentially just pairs of messages; one for the request and one for the reply.
 stack|A ____ is simply a collection of packages. This is a rosbuild-only concept that was replaced by a metapackage.

@@ -5,6 +5,7 @@
 ############################################
 # Import Libraries
 from random import*
+import webbrowser
 
 #Helper Functions
 #https://eli.thegreenplace.net/2010/01/22/weighted-random-generation-in-python/
@@ -53,7 +54,7 @@ while (numRemainAsk > 0):
     # Ask the definition
     print(definitions[defAsk])
    
-    if(input("Input term: ")== terms[defAsk]):
+    if(input("Input term: ").upper()== terms[defAsk].upper()):
         scores[defAsk] = scores[defAsk] - 1
         print("Correct!      ",terms[defAsk])
     else:
@@ -63,3 +64,4 @@ while (numRemainAsk > 0):
     numRemainAsk = sum(scores);
     print("Total Num Remaining: ",numRemainAsk,"   Remaining for this definition: ", scores[defAsk],"\r\n")
 print("All Done")
+webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')

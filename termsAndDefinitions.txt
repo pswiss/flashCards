@@ -49,7 +49,7 @@ roswtf|[command] A tool for diagnosing common issues with a ROS system.
 rqt|____ is a framework for GUI development in ROS. The _____common_plugins metapackage provides many pre-made ROS GUIs that are great for working with ROS. Built in tools include bagfile plotting, playing, and recording, visualization of the /tf tree, image stream viewers, and more.
 rviz|____ is the primary 3D visualization tool used in ROS.
 service|A ____ defines a request-reply communication paradigm between nodes. There are special .[omitted] ____ definition files which are essentially just pairs of messages; one for the request and one for the reply.
-stack|A ____ is simply a collection of packages. This is a rosbuild-only concept that was replaced by a metapackage.
+stack|This is a rosbuild-only concept that was replaced by a metapackage.
 subscriber|Nodes use ____s to listen to data being published on topics.
 tf|This is a special package and topic for tracking transformations between coordinate frames. Many robotic systems rely heavily on geometric calculations and ____ is the primary way to do these calculations within ROS.
 time|ROS has built-in primitives for defining the current ROS ____. Often messages are timestamped, and this can be an important way of "synchronizing" portions of your system.

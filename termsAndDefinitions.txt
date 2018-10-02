@@ -1,5 +1,5 @@
 action|Preemptable (interruptable) services. If you have a service that takes a long time (moving a robot arm), you can use an ____ to make them interruptable.
-bags|A ____ is a file that contains recorded topic data. The associated package that defines command line tools and APIs for interacting with ____.
+bag|A ____ is a file that contains recorded topic data. The associated package that defines command line tools and APIs for interacting with ____.
 callback|A ____ is a function that gets "connected" to a particular event. The most common usage would be a function inside of a node that gets called every time a message gets published on a particular topic.
 catkin|This is the primary build system of ROS. ____ is used to convert message definitions into useful code, C++ code into executables, define installation instructions for packages, and other things. More about these ideas can be read on the ____ conceptual overview page.
 catkin_create_pkg|[command] Automatically create a new directory with a template CMakeLists.txt and package.xml – the two files required by all ROS packages. Allows you to list dependencies and have them automatically be filled out in the package.xml.
@@ -7,7 +7,7 @@ catkin_init_workspace|[command] Creates a symlink from your workspace src direct
 catkin_lint|[command] This is a relatively new package designed for finding issues with catkin package.xml and CMakeLists.txt files.
 catkin_make|[command] Builds targets contained in a workspace. Must be executed from the root of the workspace.
 catkinize|[command] This command calls several scripts that are designed to help the transition from rosbuild to catkin.
-client libraries|these are the "glue" that tie ROS concepts together with code that you write. For example, rospy is the ____ that allows a user to write Python code that interacts with the ROS world via publishing, subscribing, parameters, etc. There are several different ____, but the most commonly used are roscpp and rospy; rosjava and roslisp are both used occasionally.
+client library|these are the "glue" that tie ROS concepts together with code that you write. For example, rospy is the ____ that allows a user to write Python code that interacts with the ROS world via publishing, subscribing, parameters, etc. There are several different ____, but the most commonly used are roscpp and rospy; rosjava and roslisp are both used occasionally.
 CMakeLists.txt|This file tells catkin how and what to build in a particular package.
 environment variable|ROS uses a variety of ____s to define where packages are located, which ROS version you are using, where to look for the ROS master, to identify your machine, and more. These are typically set via setup.bash files in your workspace.
 latch|When a publisher is created, if it is set to ____, then every time a new subscriber to that publisher's topic is created, it will automatically receive a copy of the last message that was published on that topic. This can be useful for topics that are only published occasionally (like map data or status indicators).

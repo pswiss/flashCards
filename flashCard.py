@@ -46,12 +46,8 @@ numRemainAsk = sum(scores);
 while (numRemainAsk > 0):
     print("----------------------------------------")
     
-    sumScores = 0;
-
     #determine which definition to ask
-    #defAsk = randint(0,len(scores)-1)
     defAsk = weighted_choice_sub(scores)
-
     
     # Ask the definition
     print(definitions[defAsk])
@@ -65,5 +61,6 @@ while (numRemainAsk > 0):
     
     numRemainAsk = sum(scores);
     print("Total Num Remaining: ",numRemainAsk,"   Remaining for this definition: ", scores[defAsk],"\r\n")
+    
 print("All Done")
 webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
